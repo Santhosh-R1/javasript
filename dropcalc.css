@@ -1,0 +1,14 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.div1{
+    height: 200px;
+    width: 600px;
+    background-color: chocolate;
+    justify-items: center;
+}
+body{
+    justify-items: center;
+    position: relative;
+    top: 250px;
+}

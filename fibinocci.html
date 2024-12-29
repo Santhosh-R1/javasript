@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="input" />
+    <button onclick="check()">Check</button>
+
+    <script>
+      function check() {
+        let number = document.getElementById("input").value;
+        let a = 0,
+          b = 1,
+          num;
+        console.log(a);
+        console.log(b);
+        num = a + b;
+
+        for (let i = 0; num <= number; i++) {
+          console.log(num);
+          a = b;
+          b = num;
+          num = a + b;
+        }
+      }
+    </script>
+  </body>
+</html>

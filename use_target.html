@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="result">Name</h1>
+    <button onclick="update(event)">Santhosh</button> <button onclick="update(event)">Akash</button> <button onclick="update(event)">Darsana</button>
+    <script>
+       let result= document.getElementById("result")
+        function update(event){
+
+            result.textContent=event.target.textContent
+        }
+    </script>
+</body>
+</html>

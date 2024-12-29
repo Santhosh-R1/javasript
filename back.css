@@ -1,0 +1,27 @@
+.box{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(202, 141, 97);
+    justify-items: center;
+    position: absolute;
+    right: 35%;
+    top: 30%;
+    filter: drop-shadow(15px 10px 10px red);
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+}
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.show{
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    
+}
+#amd{
+    font-size: 45px;
+}
+

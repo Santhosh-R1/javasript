@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+
+<body>
+    <div>
+        <table border="2">
+            <tr>
+                <td>Name: <input type="text" id="input-name"></td>
+            </tr>
+            <tr>
+                <td>Age: <input type="number" id="input-age"></td>
+            </tr>
+            <tr>
+                <td>Gender: <input type="radio" name="sex" id="radio-male" value="Male">Male <input type="radio"
+                        name="sex" id="radio-female" value="Female">Female</td>
+            </tr>
+            <tr>
+                <td>Course:
+                    <select id="course">
+                        <option>Mern stack Internship</option>
+                        <option>Full stack Internship</option>
+                        <option>Data Science Internship</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email: <input type="email" id="input-email"></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="save()">Save</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function save() {
+            let name = document.getElementById("input-name").value
+            let age = document.getElementById("input-age").value
+            let gender = document.getElementById("radio-male" || "radio-female").value
+            let course = document.getElementById("course").value
+            let email = document.getElementById("input-email").value
+
+            let result = document.getElementById("result")
+            let table = document.createElement("table")
+            table.border = 2
+
+            let title = document.createElement("tr")
+            title.innerHTML = "<th>Name</th> <th>Age</th> <th>Gender</th> <th>Course</th> <th>Email</th> <th>delete</th>"
+            table.append(title);
+
+            let row = document.createElement("tr")
+            row.innerHTML = "<td>" + name + "</td>" + "<td>" + age + "</td>" + "<td>" + gender + "</td>" + "<td>" + course + "</td>" + "<td>" + email + "</td>" + "<button onclick='remove(event)'>Delete</button>"
+             table.append(row)
+
+             result.append(table)
+        }
+
+        function remove(event) {
+            event.target.parentElement.parentElement.remove()
+        }
+    </script>
+</body>
+
+</html>

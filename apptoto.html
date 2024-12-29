@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inputbox">
+    <button onclick="add()">Add</button>
+    <ul id="parent-tag">
+
+    </ul>
+
+    <script>
+        let inputbox=document.getElementById("inputbox")
+        let ul=document.getElementById("parent-tag")
+        function add(){
+let listitem=document.createElement("li")
+listitem.innerHTML=inputbox.value+"<button onclick='remove(event)'>Delete</button>"
+ul.append(listitem)
+        }
+
+        function remove(event){
+            event.target.ParentElement.remove()
+        }
+    </script>
+</body>
+</html>

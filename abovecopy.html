@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="input_box" onkeyup="copy()">
+    <h1 id="show_result"></h1>
+    <script>
+        function copy(){
+            var input=document.getElementById("input_box").value 
+            var show=document.getElementById("show_result")
+            show.textContent=input
+        }
+    </script>
+</body>
+</html>

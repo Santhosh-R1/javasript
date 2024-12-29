@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.navbar{
+   background-color: brown; 
+   padding: 10px;
+}
+#container{
+    padding: 10px;
+
+}
+#books-container{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+#books-container p{
+padding-top: 10px;
+}
+#books-container h1{
+    color: brown;
+}
+#books-container h3{
+    padding-top: 10px;
+}
+#books-container button{
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.add-button{
+  background-color: brown;  
+  border-radius: 100%;
+  border: none;
+  font-size: 30px;
+  position:absolute ;
+  bottom: 30px;
+  right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  z-index: 1;
+}
+#popup-overlay{
+background-color: rgba(0, 0, 0, 0.578);
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: none;
+}
+#popup-box{
+    background-color: brown;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+
+}
+#popup-box input{
+   background: transparent; 
+border: none;
+width: 100%;
+margin: 5px;
+padding: 5px;
+font-size: 20px;
+border-bottom: solid black 2px;
+}
+#popup-box textarea{
+    background: transparent; 
+width: 100%;
+margin: 5px;
+padding: 5px;
+font-size: 20px;
+border: solid black 2px;
+}
+#popup-box input::placeholder{
+    color: black;
+}
+#popup-box textarea::placeholder{
+    color: black;
+}
+#popup-box button{
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin: 5px;
+    border: none;
+}
+#popup-box input:focus{
+    outline: none;
+}
+#popup-box textarea:focus{
+    outline: none;
+}
